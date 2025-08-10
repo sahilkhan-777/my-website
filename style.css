@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-clr: #f6f6f6;
+    --secondary-clr: #000000;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--primary-clr);
+}
+
+
+/* Hero section */
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    height: 100%;
+    /* border-bottom: 1px solid var(--secondary-clr); */
+}
+
+.hero h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 6rem;
+    color: var(--secondary-clr);
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 500;
+}
+
+.hero .title>div {
+    margin-top: 5rem;
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.hero .title a {
+    text-decoration: underline;
+    color: var(--secondary-clr);
+    padding: 0.5rem 1rem;
+    text-underline-offset: 0.8rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.hero .title a:hover {
+    color: var(--primary-clr);
+    background-color: var(--secondary-clr);
+    text-decoration: none;
+}
+
+.hero .profile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50% 25%;
+    object-fit: cover;
+}
+
+/* About section */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12rem;
+    padding: 4rem;
+    /* border-bottom: 1px solid var(--secondary-clr); */
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.5rem;
+}
+
+.about h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    color: var(--secondary-clr);
+    margin-top: 3rem;
+    font-weight: 500;
+}
+
+.about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: var(--secondary-clr);
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+.about .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+}
+
+/* Education and certification section */
+.certification {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12rem;
+    padding: 4rem;
+    height: 100%;
+    /* border-bottom: 1px solid var(--secondary-clr); */
+}
+
+.certification h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    color: var(--secondary-clr);
+    margin-top: 3rem;
+    font-weight: 500;
+}
+
+.certification .certification-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+hr{
+    width: 80%;
+}
+
+.certification .certification-list h3 {
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 0.5em;
+}
+.certification .certification-list p{
+    margin-bottom: 0.5em;
+}
+/* Skills section */
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+    /* border-bottom: 1px solid var(--secondary-clr); */
+}
+
+.skills .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills .skill-list {
+    background-color: var(--secondary-clr);
+    color: var(--primary-clr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.skills .skill-list h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    color: var(--primary-clr);
+    margin-top: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.skills .skill-list ul {
+    list-style: none;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Contact section */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    /* border-bottom: 1px solid var(--secondary-clr); */
+}
+
+.contact .contact-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.5rem;
+}
+
+.contact-details h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 5rem;
+    color: var(--secondary-clr);
+    margin: 3rem 0;
+    font-weight: 500;
+}
+
+.contact-details .group {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.contact .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.contact img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.contact-details #website {
+    text-decoration: none;
+    color: var(--secondary-clr);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    position: relative;
+    top: 2rem;
+    left: -1rem;
+    text-decoration: overline underline;
+    text-underline-offset: 0.3rem;
+}
+
+.contact-details #website::after {
+    content: '<<';
+    position: absolute;
+    right: -1.5rem;
+    transition: 0.5s ease;
+}
+
+.contact-details a#website:hover {
+    color: var(--primary-clr);
+    background-color: var(--secondary-clr);
+    text-decoration: none;
+}
+
+.contact-details .social-links {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.contact-details .social-links svg {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    fill: var(--secondary-clr);
+}
+
+.contact-details .social-links svg:hover {
+    fill: var(--primary-clr);
+    background-color: var(--secondary-clr);
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: fill 0.3s ease;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-clr);
+    color: var(--primary-clr);
+}
