@@ -143,7 +143,8 @@ body {
     gap: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
-hr{
+
+hr {
     width: 80%;
 }
 
@@ -151,9 +152,11 @@ hr{
     font-family: 'EB Garamond', serif;
     margin-bottom: 0.5em;
 }
-.certification .certification-list p{
+
+.certification .certification-list p {
     margin-bottom: 0.5em;
 }
+
 /* Skills section */
 .skills {
     display: grid;
@@ -290,4 +293,70 @@ footer {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--secondary-clr);
     color: var(--primary-clr);
+}
+
+@media (max-width: 600px) {
+    * {
+        height: auto;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about h2{
+        text-align: center;
+    }
+    .about img {
+        height: 400px;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .certification {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4.5rem;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 4.5rem;
+    }
+
+    .skills .skill-list {
+        padding: 3.5rem 2.5rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.5rem;
+        width: 100%;
+    }
+
+    .contact h2 {
+        text-align: center;
+        margin-bottom: 5.5rem;
+    }
+    .contact #social-section{
+        margin-top: 5rem;
+    }
+    .contact img {
+        height: 300px;
+        max-width: 600px;
+        width: 100%;
+    }
 }
