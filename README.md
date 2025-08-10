@@ -6,6 +6,7 @@
 - Built using HTML and CSS only.
 
 ## Future Improvements
-- Responsive Layout
+- Responsive Layout (Both Mobile Phone and Tablet)
 - Menu Bar
 - Animations
+- Projects section showcasing my projects
